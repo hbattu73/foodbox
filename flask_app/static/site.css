@@ -1,0 +1,316 @@
+html, 
+body {
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+}
+
+div#heading {
+  background: #f0f2f5;
+  margin: 0;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+}
+
+div#heading h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  padding-left: 25px;
+  padding-top: 5px;
+  margin: 0;
+  color: #1b5d89;
+  text-align: left;
+}
+
+div#heading p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color:rgb(40, 44, 52);
+  font-size: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.map-logo {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+.yelp-logo {
+  vertical-align: middle;
+  padding-bottom: 10px;
+  width: 70px;
+  height: 35px;
+}
+
+.container {
+  height: 89vh;
+  display: flex;
+}
+
+#map {
+  flex: 3;
+}
+
+#sidebar {
+  background-color: rgb(40, 44, 52);
+  border-left: 1px solid#f5f8ff;
+  width: 350px;
+  overflow-y: scroll;
+}
+
+div.About a,
+div.About a:visited {
+  color: white;
+  text-decoration: none;
+}
+div.About {
+  padding: 15px;
+}
+
+div.About h3 {
+  margin: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+div.About p {
+  margin-top: 10px;
+  color:whitesmoke;
+}
+
+
+div#search-area {
+  background-color: rgb(40, 44, 52);
+  padding: 14px;
+  border-bottom: 1px solid #444444;
+}
+
+div#search-title {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+div#search-area input {
+  padding: 12px 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  height: 26px;
+  letter-spacing: normal;
+  font-style: normal;
+  opacity: 1;
+}
+div#search-area button {
+  padding: 12px 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 40%;
+  background: whitesmoke;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Grandstander', cursive;
+  color: rgb(40, 44, 52);
+  cursor: pointer;
+}
+
+div#search-area button:hover{
+  filter: brightness(85%);
+}
+
+div#search-area input[type = 'text'] {
+  font-family: "Noto Sans", sans-serif;
+  width: 92%;
+}
+
+div#search-area input[type = 'number'] {
+  font-family: "Noto Sans", sans-serif;
+  width: 75px;
+  float: right; 
+}
+.handle-error {
+  display: inline;
+}
+
+div#handle-location-error h3 {
+  float: left;
+  padding-top: 18px;
+  padding-left: 10px;
+  color: whitesmoke;
+  margin: 0px;
+
+}
+div#handle-location-error img#error {
+  float: left;
+  width: 32px;
+  height: 32px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+div#handle-location-error h4 {
+  float: left;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-right: 15px;
+  color: whitesmoke;
+  margin: 0px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+div#results-area {
+  background-color: #f5f8ff;
+  padding: 12px;
+}
+
+div#results-area h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color:rgb(40, 44, 52);
+}
+
+div#results-area h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: rgb(40, 44, 52);
+}
+
+div#results-area ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+div#results-area ul li {
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+div#results-area ul li:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.first-row {
+  display: inline;
+}
+
+.second-row {
+  display: inline;
+}
+
+.third-row {
+  display: inline;
+}
+div#results-area ul li p#name {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(40, 44, 52);
+  width: 250px;
+  float: left;
+  margin: 0;
+  font-size: 21px;
+  margin-bottom: 2px;
+}
+
+div#results-area ul li img#star{
+  float: right;
+  padding-top: 5px;
+  width: 12px;
+  height: 12px;
+}
+
+div#results-area ul li p#rating{
+  margin: 0;
+  padding-top: 2px;
+  padding-right: 2px;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  float: right;
+
+}
+
+div#results-area ul li div.row div.content p#categories {
+  float: left;
+  margin: 0;
+  width: 250px;
+}
+div#results-area ul li div.row div.content img#fork-knife {
+  float: left;
+  padding-top: 2px;
+  padding-right: 2px;
+}
+
+div#results-area ul li div.row div.content p#takeout {
+  float: left;
+  margin: 0;
+}
+div#results-area ul li div.row div.content img#takeout {
+  float:left;
+  padding-top: 2px;
+  padding-right: 2px;
+}
+div#results-area ul li div.row div.content p#delivery {
+  float: left;
+  margin:0;
+}
+div#results-area ul li div.row div.content img#delivery {
+  float: left;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-right: 2px;
+}
+div#results-area ul li div.row {
+  display: inline-flex;
+  flex-direction: row;
+  clear: left;
+}
+div#results-area ul li div.row div.content {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+}
+
+div#results-area ul li div.business-image img{
+  border-radius: 5px;
+  width: 100%; 
+  height: 160px; 
+  margin: 10;
+}
+
+.mapboxgl-popup-content {
+  background: rgb(40, 44, 52);
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+  color: white; 
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: rgb(40, 44, 52);
+}
+
+.mapboxgl-popup-content .marker-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mapboxgl-popup-content p {
+  margin: 0;
+  margin-top: 5px;
+  font-weight: 300;
+}
