@@ -1,0 +1,12 @@
+**/__pycache__/
+env/
+.vscode/
+
+**/bin
+**/obj
+**/node_modules
+
+.DS_Store
+
+*.pyc
+*.swp
