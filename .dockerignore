@@ -1,12 +1,1 @@
-__pycache__/
-env/
-.vscode/
-
-**/bin
-**/obj
-**/node_modules
-.git
-
-*.pyc
-*.swp
-.coverage
+**/.git
