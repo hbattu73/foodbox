@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request
 from flask.helpers import url_for
 from flask.json import jsonify
-from flask_app.yelp import query
-from . import app
+
+from yelp import query
+
+app = Flask(__name__)
 
 @app.route("/")
 def index():
@@ -39,3 +41,7 @@ def search():
         "locations" : locations,
         "businesses" : result
     })
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
