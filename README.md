@@ -23,14 +23,15 @@ $ docker stop foodbox-app
 ### AWS Elastic Beanstalk
 The app is also hosted on the following url: http://foodbox-env-2.eba-8tsswabp.us-west-1.elasticbeanstalk.com/
 
-## To use
+## How to use
 
 ![img](results-screen.png)
 
 You must first input your desired location in the Mapbox Geolocater in the top right of the map. Then simply enter a relevant search term, a sort-by option, and an
 integer limit to your results. The results will be rendered in the sidebar to the right and plotted in the map.
 
-Hovering over a card in the sidebar highlights the marker of that specific eatery in the map. Hovering over a marker in the map presents further info in a pop-up.
+Clicking on a card will redirect to the Yelp page for that specific eatery. Hovering over a card in the sidebar highlights the marker of that eatery in the map. 
+Hovering over a marker in the map presents further info in a pop-up.
 
 ## Known Bugs
 
