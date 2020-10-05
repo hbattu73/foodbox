@@ -1,7 +1,7 @@
 {
     "AWSEBDockerrunVersion": "1",
     "Image": {
-      "Name": "hbattu/foodbox-app",
+      "Name": "hbattu/foodbox",
       "Update": "true"
     },
     "Ports": [
